@@ -322,6 +322,12 @@
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
+      // Dès qu’on affiche la barre de tags, le plugin crée un premier bouton "Tous" avec les classes active active-tag.
+      // Donc par défaut, le tag actif au départ est "Tous".
+      // Ensuite :
+      // Quand on clique sur un autre tag, filterByTag() enlève active-tag de l’ancien tag et la met sur le nouveau.
+      // Donc active-tag circule dynamiquement d’un bouton à un autre en fonction de ce qu'on choisit.
+
       $.each(tags, function (index, value) {
         tagItems += `<li class="nav-item active">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
@@ -345,8 +351,11 @@
       }
 
       // Mise à jour du tag actif
-      $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(".active-tag").removeClass(
+        "active active-tag"
+      ); /* Voir sur le bouton "tous" au début de la fonction showItemTags() */
+      // $(this).addClass("active-tag"); CORRECTION
+      $(this).addClass("active active-tag"); // pour ajouter la classe active (voir style CSS) en plus de la classe active-tag à l'élément cliqué
 
       var tag = $(this).data("images-toggle");
 

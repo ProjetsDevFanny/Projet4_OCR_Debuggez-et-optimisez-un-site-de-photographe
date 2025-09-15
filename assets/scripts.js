@@ -23,6 +23,6 @@ $(document).ready(function () {
     lightboxId: "myAwesomeLightbox", // id du modal qui sera créé pour le lightbox
     showTags: true, // affiche les filtres (tags) au-dessus ou en-dessous
     tagsPosition: "top", // position de la barre de tags ("top" ou "bottom")
-    // navigation: true, // ou false pour désactiver les boutons précédent/suivant dans la lightbox = valeur par défaut du plugin est "true", donc on peut la supprimer.
+    // navigation: true, // ou false pour désactiver les boutons précédent/suivant -> déjà mentionné à ligne 32 du fichier maugallery.js
   });
 });
