@@ -8,7 +8,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.min.css">
+	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="shortcut icon" href=""> <!-- icone de l'onglet -->
 
 	<!-- Google Fonts -->
@@ -46,21 +46,49 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
+
 					<!-- Première image visible immédiatement -->
-					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100"
-						alt="Photo de ryoji-iwata: homme qui marche dans la rue de dos." fetchpriority="high">
+					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1400.webp" srcset="
+					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-600.webp 600w,
+					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-900.webp 900w,
+					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1400.webp 1400w
+					" sizes="(max-width: 600px) 600px,
+					(max-width: 900px) 900px,
+					1400px" class="d-block w-100" alt="Photo de ryoji-iwata: homme qui marche dans la rue de dos."
+						fetchpriority="high">
 				</div>
+				<!-- A NOTER : -->
+				<!-- srcset = 3 images différences disponibles avec 3 tailles différentes
+				     sizes = combien de place l’image va prendre sur le site selon l’écran.
+				 			
+				=> Le navigateur combine srcset + sizes pour choisir automatiquement l'image la plus adaptée à la taille d'écran (ex: desktop: 1400px, tablette: 900px, mobile: 600px) -->
+
 				<div class="carousel-item">
 					<!-- Images suivantes du carrousel (lazy load) -->
-					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
-						alt="Photo de nicholas-green: foule en délire pendant un concert." loading="lazy">
+					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1400.webp" srcset="
+        ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-600.webp 600w,
+        ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-900.webp 900w,
+        ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1400.webp 1400w
+      " sizes="(max-width: 600px) 600px,
+             (max-width: 900px) 900px,
+             1400px" class="d-block w-100" alt="Photo de nicholas-green: foule en délire pendant un concert."
+						loading="lazy">
 				</div>
+
+
 				<div class="carousel-item">
-					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100"
+					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1400.webp" srcset="
+        ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-600.webp 600w,
+        ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-900.webp 900w,
+        ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1400.webp 1400w
+      " sizes="(max-width: 600px) 600px,
+             (max-width: 900px) 900px,
+             1400px" class="d-block w-100"
 						alt="Photo de edward-cisneros: couple de mariés qui s'embrassent au milieu de leurs invités."
 						loading="lazy">
 				</div>
 			</div>
+
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
 				data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -220,7 +248,7 @@
 	</div>
 
 	<!-- JS (optimisé pour Lighthouse) -->
-	 <!-- jQuery téléchargé en local et mis à jour à la version 3.6.4 -->
+	<!-- jQuery téléchargé en local et mis à jour à la version 3.6.4 -->
 	<script src="./assets/jquery-3.6.4.min.js"></script>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="./assets/maugallery.min.js"></script>
