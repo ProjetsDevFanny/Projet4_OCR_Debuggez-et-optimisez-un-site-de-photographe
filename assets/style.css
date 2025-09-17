@@ -101,6 +101,11 @@ body {
 	min-height: 100vh; 
 } */
 
+img.d-block.w-100 {
+  width: 100%;
+  height: auto; /* permet de garder les proportions des images (car width et height dans le html sont déjà définis)*/
+}
+
 .title {
 	text-align: center;
 	padding-block: 2em;
