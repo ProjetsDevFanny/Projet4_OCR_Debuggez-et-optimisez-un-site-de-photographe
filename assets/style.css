@@ -104,11 +104,11 @@ body {
 } */
 
 /* Toutes les images ont les caractéristiques de la classe img.d-block.w-100 */
-img {
+img, picture {
   width: 100%;
   height: auto; /* permet de garder les proportions des images (car width et height dans le html sont déjà définis)*/
 	display: block; /* Les images sont en inline par défaut, elle peuvent avoir des petits espaces entre elles, donc avec "block" on les supprime et elles occupent exactement la hauteur de leur conteneur*/
-	object-fit: cover;
+	object-fit: contain; /* Affiche l'image complète sans la rogner */
 }
 
 .title {
@@ -422,5 +422,5 @@ input[type="submit"] {
 
 	.picture {
 		width: 80%;
-	}
+}
 }

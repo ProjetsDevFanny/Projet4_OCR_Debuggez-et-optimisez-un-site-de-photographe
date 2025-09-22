@@ -115,13 +115,17 @@
 					<div class="carousel-item active">
 
 						<!-- Première image visible immédiatement -->
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1400.webp" srcset="
-						./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-420.webp 420w,
-					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-600.webp 600w,
-					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-900.webp 900w,
-					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1400.webp 1400w
-					" sizes="100vw" class="d-block w-100" alt="Photo de ryoji-iwata: homme qui marche dans la rue de dos."
-							width="1400" height="648" fetchpriority="high">
+						<picture>
+							<source media="(max-width: 420px)"
+								srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-420.webp">
+							<source media="(max-width: 600px)"
+								srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-600.webp">
+							<source media="(max-width: 900px)"
+								srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-900.webp">
+							<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1400.webp" class="d-block w-100"
+								alt="Photo de ryoji-iwata: homme qui marche dans la rue de dos." width="1400" height="648"
+								fetchpriority="high">
+						</picture>
 					</div>
 					<!-- A NOTER : -->
 					<!-- srcset = 3 images différences disponibles avec 3 tailles différentes
@@ -131,26 +135,32 @@
 
 					<div class="carousel-item">
 						<!-- Images suivantes du carrousel (lazy load) -->
-						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1400.webp" srcset="
-						./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-420.webp 420w,
-        ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-600.webp 600w,
-        ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-900.webp 900w,
-        ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1400.webp 1400w
-      " sizes="100vw" class="d-block w-100" alt="Photo de nicholas-green: foule en délire pendant un concert."
-							width="1400" height="648" loading="lazy">
+						<picture>
+							<source media="(max-width: 420px)"
+								srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-420.webp">
+							<source media="(max-width: 600px)"
+								srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-600.webp">
+							<source media="(max-width: 900px)"
+								srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-900.webp">
+							<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1400.webp" class="d-block w-100"
+								alt="Photo de nicholas-green: foule en délire pendant un concert." width="1400" height="648"
+								loading="lazy">
+						</picture>
 					</div>
 
 
 					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1400.webp" srcset="
-						./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-420.webp 420w,
-        ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-600.webp 600w,
-        ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-900.webp 900w,
-        ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1400.webp 1400w
-      " sizes="100vw" class="d-block w-100"
-							alt="Photo de edward-cisneros: couple de mariés qui s'embrassent au milieu de leurs invités." width="1400"
-							height="648" alt="Photo de edward-cisneros: couple de mariés qui s'embrassent au milieu de leurs invités."
-							loading="lazy">
+						<picture>
+							<source media="(max-width: 420px)"
+								srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-420.webp">
+							<source media="(max-width: 600px)"
+								srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-600.webp">
+							<source media="(max-width: 900px)"
+								srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-900.webp">
+							<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1400.webp" class="d-block w-100"
+								alt="Photo de edward-cisneros: couple de mariés qui s'embrassent au milieu de leurs invités."
+								width="1400" height="648" loading="lazy">
+						</picture>
 					</div>
 				</div>
 
@@ -168,9 +178,11 @@
 		</section>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina.webp" srcset="
-				./assets/images/nina-420.webp 420w," sizes="100vw" class="d-block w-100" width="600" height="400"
-					alt="Photo de Nina: La photographe Nina qui pose pour la photo." loading="lazy">
+				<picture>
+					<source media="(max-width: 420px)" srcset="./assets/images/nina-420.webp">
+					<img src="./assets/images/nina.webp" class="d-block w-100" width="700" height="690"
+						alt="Photo de Nina: La photographe Nina qui pose pour la photo." loading="lazy">
+				</picture>
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
