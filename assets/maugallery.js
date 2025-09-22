@@ -171,31 +171,14 @@
 
     // ---------------Ouvre la lightbox et on affiche l’image cliquée dedans----------------------
 
-    // openLightBox(element, lightboxId) {
-    //   $(`#${lightboxId}`)
-    //     .find(".lightboxImage")
-    //     .attr("src", element.attr("src"));
-    //   $(`#${lightboxId}`).modal("toggle");
-    // },
-
-    // -----------Correction du bug :conflit focus sur la lightBox et le focus sur la première image de la galerie.----------------------
-
     openLightBox(element, lightboxId) {
-      const modal = $(`#${lightboxId}`);
-      modal.find(".lightboxImage").attr("src", element.attr("src"));
-      modal.attr("aria-hidden", "false"); // modale ouverte, on désactive l'attribut aria-hidden pour que le lecteur de screen reader puisse la voir.
-      modal.modal("toggle");
+      $(`#${lightboxId}`)
+        .find(".lightboxImage")
+        .attr("src", element.attr("src"));
+      $(`#${lightboxId}`).modal("toggle");
     },
 
-    // On gère l'événement de fermeture pour remettre aria-hidden à true:
-    // Bootstrap déclenche l’événement hidden.bs.modal quand la modale se ferme, donc on peut ajouter :
-    closeLightBox(lightboxId) {
-      const modal = $(`#${lightboxId}`);
-      modal.on("hidden.bs.modal", function () {
-        $(this).attr("aria-hidden", "true"); // modale fermée ->  Cela indique aux technologies d’assistance que la modal est maintenant cachée et ne doit plus être lue ou focusée
-      });
-    },
-
+  
     // ---------------On gère l’image précédente dans la lightbox----------------------
 
     prevImage() {

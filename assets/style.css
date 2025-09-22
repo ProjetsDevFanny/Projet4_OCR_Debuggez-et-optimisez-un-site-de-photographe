@@ -103,9 +103,12 @@ body {
 	min-height: 100vh; 
 } */
 
-img.d-block.w-100 {
+/* Toutes les images ont les caractéristiques de la classe img.d-block.w-100 */
+img {
   width: 100%;
   height: auto; /* permet de garder les proportions des images (car width et height dans le html sont déjà définis)*/
+	display: block; /* Les images sont en inline par défaut, elle peuvent avoir des petits espaces entre elles, donc avec "block" on les supprime et elles occupent exactement la hauteur de leur conteneur*/
+	object-fit: cover;
 }
 
 .title {
@@ -129,7 +132,7 @@ img.d-block.w-100 {
 	-> Ajouter .show > .nav-link est juste une sécurité pour certains comportements où le lien n’aurait pas encore active mais le contenu est visible. */
 
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #704e0e;
 	border-radius: 0;
 }
 
