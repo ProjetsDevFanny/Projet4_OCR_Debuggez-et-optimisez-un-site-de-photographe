@@ -172,8 +172,6 @@ img, picture {
 	align-items: center;
 	display: flex;
 	font-size: 24px;
-	cursor: pointer;
-	/* pour les boutons précédent/suivant dans la lightbox */
 }
 
 .quote {

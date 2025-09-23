@@ -178,7 +178,6 @@
       $(`#${lightboxId}`).modal("toggle");
     },
 
-  
     // ---------------On gère l’image précédente dans la lightbox----------------------
 
     prevImage() {
