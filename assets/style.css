@@ -197,6 +197,11 @@ img, picture {
 	font-size: 22px;
 }
 
+/* Pour corriger le problème de contraste signalé par Wave (mais peut-être pas recommandé, car c'est un texte seulement lu par les lecteurs d'écran */
+.visually-hidden {
+   color: #000000;
+}
+
 #services {
 	margin: auto;
 	background-color: #A8D5D8;
