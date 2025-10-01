@@ -1,0 +1,7 @@
+[build]
+publish = "."  # publier depuis la racine (où se trouve index.html)
+
+[[headers]]
+for = "/assets/*"  # tous les fichiers dans assets (CSS, JS, images)
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"  # cache long 1 an
