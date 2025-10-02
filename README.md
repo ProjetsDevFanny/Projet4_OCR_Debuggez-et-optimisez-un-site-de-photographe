@@ -59,7 +59,8 @@ accessibilité renforcée et SEO optimisé.
 - **Images optimisées** : conversion en WebP, déclinaisons responsives (420/600/900/1400)
 - **Gain de poids** : 29,4 MB → 456,09 kB (**98,5% de réduction**)
 - **Ressources minifiées** : `bootstrap.min.css`, `bootstrap.bundle.min.js`, `style.min.css`
-- **Rendu initial amélioré** : ajustement de l’ordre de chargement des scripts/styles
+- **Rendu initial amélioré** : ajustement de l'ordre de chargement des scripts/styles
+- **Mise en cache des assets** : cache 1 an via Netlify (netlify.toml) pour réduire les requêtes serveur
 
 ### Accessibilité
 
