@@ -91,7 +91,7 @@ accessibilité renforcée et SEO optimisé.
 
 | Critère       | Avant | Après |
 | ------------- | ----- | ----- |
-| Performance   | 68    | 98    |
+| Performance   | 68    | 99    |
 | Accessibilité | 70    | 100   |
 | SEO           | 73    | 100   |
 
